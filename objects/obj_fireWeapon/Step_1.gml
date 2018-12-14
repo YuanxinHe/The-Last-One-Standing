@@ -6,6 +6,3 @@ if(obj_player.usingController){
 	angle = point_direction(obj_player.x,obj_player.y,mouse_x,mouse_y);
 }
 
-
-x = obj_player.x + lengthdir_x(60,angle);
-y = obj_player.bbox_top + lengthdir_y(60,angle);

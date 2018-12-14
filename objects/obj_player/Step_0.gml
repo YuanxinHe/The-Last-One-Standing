@@ -39,17 +39,26 @@ var moving = keyRight - keyLeft;
 
 hsp = moving * moveSpeed;
 
-if(place_meeting(x,y+vsp,obj_col)){
-	while(!place_meeting(x,y+sign(vsp),obj_col)){
+if(place_meeting(x,y + vsp,obj_col)){
+	while(!place_meeting(x, y + sign(vsp),obj_col)){
 		y += sign(vsp)
 	}
 	vsp = 0;
 }
 
-jump = !place_meeting(x,y + 1,obj_col);
+y += vsp;
+
+if(place_meeting(x + hsp, y,obj_col)){
+	while(!place_meeting(x + sign(hsp), y, obj_col)){
+		x += sign(hsp);	
+	}
+	
+	hsp = 0;
+}
 
 x += hsp;
-y += vsp;
+
+jump = !place_meeting(x,y + 1,obj_col);
 
 //Animation
 if(!jump){
