@@ -8,7 +8,7 @@ with(other){
 	if(!hasDead) hp -= other.damage;
 	if(hp <= 0 && !hasDead){
 		hasDead = true;
-		direction = other.direction;
+		hitFrom = other.direction;
 	}
 }
 

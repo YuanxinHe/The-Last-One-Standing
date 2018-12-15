@@ -74,7 +74,7 @@
             "Key": "152b946a-4169-4735-961d-9199321368a9",
             "Value": {
                 "id": "f50289f2-7d0d-4690-a763-a468a43c0209",
-                "resourcePath": "objects\\obj_camara\\obj_camara.yy",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -107,6 +107,14 @@
             "Value": {
                 "id": "8f184b9f-cfcd-4721-b87d-e710ecbfa466",
                 "resourcePath": "objects\\obj_enemy\\obj_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3dab700f-0c39-4937-aca6-3a8e79c828d6",
+            "Value": {
+                "id": "1d6880ca-dcd4-4b75-bf58-ff2bf89c9550",
+                "resourcePath": "objects\\obj_enemy_dead\\obj_enemy_dead.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -228,6 +236,14 @@
                 "id": "97d4a68c-6890-4a3e-b9b2-7345532c864e",
                 "resourcePath": "sprites\\spr_player_walk\\spr_player_walk.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9ce097df-bbc7-4eed-9ce1-db253dfddfda",
+            "Value": {
+                "id": "31e58ef2-f16f-4c84-a574-d94a83d1d362",
+                "resourcePath": "scripts\\ShakeScreen\\ShakeScreen.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -384,7 +400,7 @@
         }
     ],
     "script_order": [
-        
+        "9ce097df-bbc7-4eed-9ce1-db253dfddfda"
     ],
     "tutorial": ""
 }

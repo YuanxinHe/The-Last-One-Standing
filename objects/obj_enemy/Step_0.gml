@@ -1,14 +1,11 @@
-if(hasDead && sprite_index != spr_enemy_dead){
-	sprite_index = spr_enemy_dead;
-}
-
-if(hasDead) vsp=3;
-
-if(place_meeting(x,y+vsp,obj_col)){
-	while(!place_meeting(x,y+sign(vsp),obj_col)){
-		y += sign(vsp)
+if(hasDead){
+	with(instance_create_layer(x,y,"Enemy",obj_enemy_dead)){
+		hsp = lengthdir_x(3,other.hitFrom);
+		vsp = lengthdir_y(3,other.hitFrom);
 	}
-	vsp = 0;
+	
+	instance_destroy();
 }
 
-y+= vsp;
+direction = point_direction(x,y,obj_player.x,obj_player.y);
+speed = 2;
