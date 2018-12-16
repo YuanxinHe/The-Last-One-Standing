@@ -1,22 +1,28 @@
 /// @description Check per frame
-keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
-keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
-keySpace = (keyboard_check(vk_space)) || keyboard_check(ord("W"));
+if(hasControl){
+	keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
+	keySpace = (keyboard_check(vk_space)) || keyboard_check(ord("W"));
 
-if(keyRight || keyLeft || keySpace){
-	usingController = false;
-}
+	if(keyRight || keyLeft || keySpace){
+		usingController = false;
+	}
 
-if(abs(gamepad_axis_value(0, gp_axislh)) > 0.2 
-|| abs(gamepad_axis_value(0, gp_axislv)) > 0.2 ){
-	usingController = true;	
-	keyRight = max(0, gamepad_axis_value(0, gp_axislh));
-	keyLeft = abs(min(0,gamepad_axis_value(0,gp_axislh)));	
-}
+	if(abs(gamepad_axis_value(0, gp_axislh)) > 0.2 
+	|| abs(gamepad_axis_value(0, gp_axislv)) > 0.2 ){
+		usingController = true;	
+		keyRight = max(0, gamepad_axis_value(0, gp_axislh));
+		keyLeft = abs(min(0,gamepad_axis_value(0,gp_axislh)));	
+	}
 
-if(gamepad_button_check(0,gp_face1) || gamepad_axis_value(0,gp_axislv) < -0.5){
-	usingController = true;
-	keySpace = 1
+	if(gamepad_button_check(0,gp_face1) || gamepad_axis_value(0,gp_axislv) < -0.5){
+		usingController = true;
+		keySpace = 1
+	}
+}else{
+	keyRight = 0;
+	keyLeft = 0;
+	keySpace = 0;
 }
 
 vsp = (vsp >= gravMax)? gravMax: vsp + grav;

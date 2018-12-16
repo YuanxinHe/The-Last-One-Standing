@@ -15,3 +15,4 @@ usingController = false;			//检测是否在使用手柄
 hsp = 0;							//游戏内实时横向移动速度
 vsp = 0;							//游戏内实时纵向移动速度
 
+hasControl = true;

@@ -14,3 +14,8 @@ shakeLength = 0;			// 用于等分震动强度
 shakeRemain = 0;			// How much strength left
 
 camBuff = 32;				//防止屏幕震动出边界
+
+bgTrees = layer_get_id("Trees");
+bgMountain1 = layer_get_id("Mountain_Level1");
+bgMountain2 = layer_get_id("Mountain_Level2");
+bgMountain3 = layer_get_id("Mountain_Level3");
