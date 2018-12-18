@@ -6,6 +6,7 @@ for(var i = 0; i < menuSize; i++){
 	var color = c_gray;
 	var optionHeight = fontSize;
 	var txt = menu[i]
+	
 	draw_set_font(font_Menu);
 	if(i == currentMenuIndex){
 		txt = string_insert("-> ", txt, 0);

@@ -18,4 +18,5 @@ fontSize = font_get_size(font_Menu);
 
 currentMenuIndex = 0;
 
-hasControl = false;
+hasControl = true;
+menuCommitted = -1;

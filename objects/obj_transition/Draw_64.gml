@@ -5,5 +5,5 @@ if(mode != TRANS_MODE.OFF){
 	draw_rectangle(0,guiHeight,guiWidth,guiHeight - (percent * guiHeightHalf), false);
 }
 
-draw_set_color(c_white);
-draw_text(50,50,string(percent));
+//draw_set_color(c_white);
+//draw_text(100,100,string(percent));
