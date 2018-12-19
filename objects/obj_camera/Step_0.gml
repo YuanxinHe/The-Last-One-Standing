@@ -22,16 +22,17 @@ if(shakeRemain != 0){
 // (x,y) is the top-left corner of the camera rectangle
 camera_set_view_pos(mainCam,x - view_wide_half,y - view_height_half);
 
-
-if(bgTrees){
-	layer_x(bgTrees,x/16);
-}
-if(bgMountain1){
-	layer_x(bgMountain1,x/8);
-}
-if(bgMountain2){
-	layer_x(bgMountain2,x/4);
-}
-if(bgMountain3){
-	layer_x(bgMountain3,x/2);
+if(room != room_Memu){
+	if(bgTrees){
+		layer_x(bgTrees,x/16);
+	}
+	if(bgMountain1){
+		layer_x(bgMountain1,x/8);
+	}
+	if(bgMountain2){
+		layer_x(bgMountain2,x/4);
+	}
+	if(bgMountain3){
+		layer_x(bgMountain3,x/2);
+	}
 }

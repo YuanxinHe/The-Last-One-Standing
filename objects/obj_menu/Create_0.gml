@@ -1,3 +1,5 @@
+#macro SAVE_FILE_0 "save0.sav"
+
 guiWidth = display_get_gui_width();
 //guiHeight = display_get_gui_height();
 guiMargin = 30;
