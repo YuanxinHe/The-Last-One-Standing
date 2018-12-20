@@ -2,7 +2,7 @@
     "id": "b4e43d02-6bf1-4f45-9d45-027a700dac47",
     "modelName": "GMFont",
     "mvc": "1.0",
-    "name": "font_Menu_Bold",
+    "name": "font_menu_Bold",
     "AntiAlias": 1,
     "TTFName": "",
     "ascenderOffset": 0,

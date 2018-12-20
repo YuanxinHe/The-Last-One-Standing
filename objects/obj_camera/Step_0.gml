@@ -9,8 +9,8 @@ x += (xTo - x) / 25;
 y += (yTo - y) / 25;
 
 // prevent the camera shake off the room
-x = clamp(x,view_wide_half + camBuff,room_width - view_wide_half - camBuff);
-y = clamp(y,view_height_half + camBuff,room_height - view_height_half - camBuff);
+x = clamp(x,viewWideHalf + camBuff, room_width - viewWideHalf - camBuff);
+y = clamp(y,viewHeightHalf + camBuff, room_height - viewHeightHalf - camBuff);
 
 // handle the screen shake
 if(shakeRemain != 0){
@@ -20,7 +20,7 @@ if(shakeRemain != 0){
 }
 
 // (x,y) is the top-left corner of the camera rectangle
-camera_set_view_pos(mainCam,x - view_wide_half,y - view_height_half);
+camera_set_view_pos(mainCam,x - viewWideHalf,y - viewHeightHalf);
 
 if(room != room_Memu){
 	if(bgTrees){

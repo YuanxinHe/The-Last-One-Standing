@@ -61,7 +61,50 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "079f2a57-714c-4a6c-8894-7e165169e69c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "firingDelay",
+            "varType": 0
+        },
+        {
+            "id": "fab48446-8ab7-4ac3-83d8-bdc943583d7c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "firingRecoil",
+            "varType": 0
+        },
+        {
+            "id": "c64c85d0-7c61-44c9-a0b9-f2303af90766",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "angle",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "123401c7-b2aa-4d23-84c6-ebddf4afd8cc",
     "visible": true

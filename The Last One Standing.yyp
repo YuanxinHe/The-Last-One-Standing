@@ -42,7 +42,7 @@
             "Key": "0264cf96-e114-4c3d-af0c-2c150d14bd73",
             "Value": {
                 "id": "b2fdc1a4-4f5a-4e9e-ba1a-62517e99df18",
-                "resourcePath": "fonts\\font_Menu\\font_Menu.yy",
+                "resourcePath": "fonts\\font_menu\\font_menu.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -115,6 +115,14 @@
             "Value": {
                 "id": "325f44a7-566a-4d5d-a9d9-c92d2f838eb8",
                 "resourcePath": "objects\\obj_room_switch\\obj_room_switch.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "29ca5ec0-f57a-45cd-9fac-bc5738cecb4f",
+            "Value": {
+                "id": "0f4770bf-cc5b-467d-9941-f99f97e02c2e",
+                "resourcePath": "objects\\obj_large_enemy\\obj_large_enemy.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -354,7 +362,7 @@
             "Key": "b4e43d02-6bf1-4f45-9d45-027a700dac47",
             "Value": {
                 "id": "e5fe8737-9008-4314-b123-abbcaf0901e3",
-                "resourcePath": "fonts\\font_Menu_Bold\\font_Menu_Bold.yy",
+                "resourcePath": "fonts\\font_menu_Bold\\font_menu_Bold.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -370,7 +378,7 @@
             "Key": "b5d457fe-5a8a-4153-b329-0233d854b7e9",
             "Value": {
                 "id": "3736097e-0ae9-47c5-a116-72bf08a86b40",
-                "resourcePath": "tilesets\\ground\\ground.yy",
+                "resourcePath": "tilesets\\tile_platform\\tile_platform.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -458,7 +466,7 @@
             "Key": "d6872632-1177-41bc-a5c1-06e43cccdf3b",
             "Value": {
                 "id": "d79fd312-1d3b-493e-ba86-1abad5b78f34",
-                "resourcePath": "sprites\\sprite19\\sprite19.yy",
+                "resourcePath": "sprites\\spr_semi_transparent_block\\spr_semi_transparent_block.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -506,7 +514,7 @@
             "Key": "f3774664-fe87-420e-8385-a677e9725f49",
             "Value": {
                 "id": "59c469de-3173-4916-b077-3f8739d655ca",
-                "resourcePath": "sprites\\sprite23\\sprite23.yy",
+                "resourcePath": "sprites\\spr_tiles\\spr_tiles.yy",
                 "resourceType": "GMSprite"
             }
         },

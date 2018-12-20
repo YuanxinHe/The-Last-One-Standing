@@ -70,8 +70,7 @@ jump = !place_meeting(x,y + 1,obj_col);
 if(!jump){
 	if(hsp != 0){
 		sprite_index = (abs(hsp) < runSpritePoint)? spr_player_walk
-					: spr_player_run;
-		image_xscale = sign(hsp);
+					: spr_player_run;		
 	}else{
 		sprite_index = spr_player_idle;
 	}
@@ -81,4 +80,7 @@ if(!jump){
 	else
 		sprite_index = spr_player_falling;
 }
+
+if(hsp !=0) image_xscale = sign(hsp)*size;
+image_yscale = size;
 

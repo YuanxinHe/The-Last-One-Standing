@@ -7,11 +7,11 @@ for(var i = 0; i < menuSize; i++){
 	var optionHeight = fontSize;
 	var txt = menu[i]
 	
-	draw_set_font(font_Menu);
+	draw_set_font(font_menu);
 	if(i == currentMenuIndex){
 		txt = string_insert("-> ", txt, 0);
 		color = c_white;
-		draw_set_font(font_Menu_Bold);
+		draw_set_font(font_menu_Bold);
 	}
 	
 	var xx = menuX;

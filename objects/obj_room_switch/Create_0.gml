@@ -1,1 +1,1 @@
-targetRoom = room_next(room);
+//targetRoom = room_next(room);

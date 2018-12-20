@@ -2,7 +2,7 @@
     "id": "b5d457fe-5a8a-4153-b329-0233d854b7e9",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "ground",
+    "name": "tile_platform",
     "auto_tile_sets": [
         
     ],
