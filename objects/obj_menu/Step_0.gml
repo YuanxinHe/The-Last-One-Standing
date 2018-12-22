@@ -15,6 +15,7 @@ if(hasControl){
 
 	if(keyboard_check_pressed(vk_enter)){
 		ShakeScreen(5,30);
+		audio_play_sound(snd_button_pressed,5,false);
 		hasControl = false;
 		menuToX = guiWidth + 200;
 		menuCommitted = currentMenuIndex;

@@ -1,8 +1,13 @@
 // set the destination position
-if(instance_exists(obj_player)){
-	xTo = obj_player.x;
-	yTo = obj_player.y;
+if(instance_exists(follow)){
+	xTo = follow.x;
+	yTo = follow.y;
+	if(follow.object_index == obj_player_dead){
+	x = xTo;
+	y = yTo;
 }
+}
+
 
 // update cam position smoothly
 x += (xTo - x) / 25;

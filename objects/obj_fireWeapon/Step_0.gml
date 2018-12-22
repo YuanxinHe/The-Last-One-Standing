@@ -7,6 +7,8 @@ if((mouse_button = mb_left || gamepad_button_check(0,gp_shoulderrb))&&obj_player
 	if(firingDelay <= 0){
 		firingDelay = 6;
 		firingRecoil = 5;
+		audio_sound_pitch(snd_shot,choose(0.75,1,1.25));
+		audio_play_sound(snd_shot,5,false);
 		ShakeScreen(2,10);
 		with(instance_create_layer(x + lengthdir_x(5,angle),y + lengthdir_y(5,angle),"Fire",obj_bullet)){
 			image_angle = other.angle;
